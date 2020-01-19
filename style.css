@@ -52,7 +52,6 @@ nav {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
 }
   
 .cobj:hover {
@@ -85,7 +84,7 @@ nav {
         flex-direction: column;
         align-items: center;
         width: 50%;
-        transform: translateX(10000%);
+        transform: translateX(100%);
     }
 
     .menu {
