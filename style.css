@@ -75,19 +75,33 @@ nav {
         overflow-x: hidden;
     }
 
-    .nav_links, .cobj {
+    nav {
+        justify-content: space-between;
+    }
+
+    .logo {
+        transform: translateX(50px);
+    }
+
+    .nav_links {
         position: absolute;
         right:0px;
-        height: 92vh;
-        top: 8vh;
-        display: flex;
-        flex-direction: column;
+        height: 50vh;
+        top: 6vh;
+        width: 100%;
         align-items: center;
-        width: 50%;
-        transform: translateX(100%);
+        flex-direction: column;
+    }
+
+    .nav_links li {
+        padding: 30px;
+        width: 100%;
+        text-align: center;
+        border-top: 10px royalblue;
     }
 
     .menu {
-        display: block;
+        transform: translateX(-50px);
+        display: inline-block;
     }
 }
