@@ -73,6 +73,5 @@ nav {
         align-items: center;
         width: 50%;
         opacity: 0;
-        transform: translateX(100%);
     }
 }
