@@ -75,9 +75,6 @@ nav {
     body {
         overflow-x: hidden;
     }
-    .logo {
-        transform: translateX(-40%);
-    }
 
     .nav_links, .cobj {
         position: absolute;
@@ -93,6 +90,5 @@ nav {
 
     .menu {
         display: block;
-        transform: translateX(100%);
     }
 }
