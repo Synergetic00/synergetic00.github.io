@@ -71,6 +71,90 @@ nav {
 
 }
 
+/* Sidebar */
+
+#sidebar nav {
+    background: #212127;
+    height: calc(100% - 70px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    text-align: right;
+    width: 250px;
+    z-index: 10000;
+    top: 70px;
+    border: none;
+    vertical-align: middle;
+}
+
+#sidebar nav ul {
+    width: 100%;
+    left: 0px;
+    background: #212127;
+    list-style: none;
+}
+
+#sidebar nav ul li {
+    width: 85%;
+    background: #212127;
+    height: 100px;
+}
+
+#sidebar nav a {
+    width: 100%;
+    background: #212127;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    line-height: 100px;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+@media screen and (max-height: 320px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    #sidebar nav ul li {
+        height: 50px;
+    }
+    
+    #sidebar nav a {
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #sidebar nav {
+        height: 50px;
+        overflow: hidden;
+		padding: 0;
+		text-align: center;
+        top: 70px;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 136, 169, 0.1);
+        border-top: 1px solid rgba(60, 106, 117, 0.1);
+    }
+
+    #sidebar nav ul {
+        display: flex;
+        width: 80%;
+    }
+
+    #sidebar nav ul li {
+        display: block;
+        height: inherit;
+        padding: 0;
+    }
+
+    #sidebar nav a {
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -119,6 +203,10 @@ nav {
 
     .nav_links li {
         border-bottom: 1px solid rgba(0, 136, 169, 0.1);
+    }
+
+    #sidebar {
+        display: none;
     }
 }
 
