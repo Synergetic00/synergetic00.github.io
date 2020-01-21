@@ -8,13 +8,17 @@
     background-color: #24252a;
 }
 
+body {
+    overflow-y: hidden;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 70px;
     background-color: #1e1f24;
-    border-bottom: 1px solid rgba(0, 136, 169, 0.1);
+    border-bottom: 1px solid rgba(0, 136, 169, 0.3);
 }
 
 .nav_links li a, .cobj {
@@ -85,6 +89,7 @@ nav {
     top: 70px;
     border: none;
     vertical-align: middle;
+    border-right: 1px solid rgba(0, 136, 169, 0.3);
 }
 
 #sidebar nav ul {
@@ -109,6 +114,8 @@ nav {
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
+    border-top: 1px solid rgba(60, 106, 117, 0.1);
+    border-bottom: 1px solid rgba(60, 106, 117, 0.1);
 }
 
 @media screen and (max-height: 320px) {
@@ -135,8 +142,8 @@ nav {
 		text-align: center;
         top: 70px;
         width: 100%;
-        border-bottom: 1px solid rgba(0, 136, 169, 0.1);
-        border-top: 1px solid rgba(60, 106, 117, 0.1);
+        border-bottom: 1px solid rgba(0, 136, 169, 0.3);
+        border-top: 1px solid rgba(60, 106, 117, 0.3);
     }
 
     #sidebar nav ul {
