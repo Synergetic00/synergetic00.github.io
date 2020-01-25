@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-
 * {
     margin: 0px;
     padding: 0px;
@@ -8,35 +7,49 @@
     background-color: #24252a;
 }
 
-body {
-    overflow-y: hidden;
+/* Header */
+
+#navbar {
+    display: inline;
 }
 
-nav {
+#navbar nav {
+    position: fixed;
+    margin: 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 70px;
-    background-color: #1e1f24;
-    border-bottom: 1px solid rgba(0, 136, 169, 0.3);
+    width: 100%;
+    height: 70px;
+    background: #1e1f24;
+    border-bottom: 1px solid rgba(0, 136, 169, 1);
 }
 
-.nav_links li a, .cobj {
+#navbar nav ul {
+    list-style: none;
+    display: flex;
+    height: 99%;
+}
+
+#navbar nav ul li {
+    list-style: none;
+    display: flex;
+    height: inherit;
+    background: #1e1f24;
+    padding: 0px 20px;
+}
+
+#navbar a {
     font-family: "Montserrat", sans-serif;
     background-color: #1e1f24;
     font-weight: lighter;
     color: #edf0f1;
     text-decoration: none;
+    line-height: 68px;
 }
-  
-.nav_links {
-    list-style: none;
-    display: flex;
-}
-  
-.nav_links li {
-    padding: 0px 20px;
-    background-color: #1e1f24;
+
+#navbar a:hover {
+    color: #cff6ff;
 }
 
 .logo h4 {
@@ -46,38 +59,17 @@ nav {
     color: #edf0f1;
     text-decoration: none;
 }
-  
-.nav_links li a:hover {
-    color: #cff6ff;
-}
-
-.cobj {
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-}
-  
-.cobj:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-}
 
 .menu {
     display: none;
 }
 
-.menu div {
-    width: 25px;
-    height: 3px;
-    background-color: #edf0f1;
-    margin: 5px;
-
-}
-
 /* Sidebar */
 
 #sidebar nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background: #212127;
     height: calc(100% - 70px);
     overflow-x: hidden;
@@ -85,11 +77,12 @@ nav {
     position: fixed;
     text-align: right;
     width: 250px;
+    left: 0;
     z-index: 10000;
     top: 70px;
     border: none;
     vertical-align: middle;
-    border-right: 1px solid rgba(0, 136, 169, 0.3);
+    border-right: 1px solid rgba(60, 106, 117, 1);
 }
 
 #sidebar nav ul {
@@ -103,6 +96,8 @@ nav {
     width: 85%;
     background: #212127;
     height: 100px;
+    border-top: 1px solid rgba(60, 106, 117, 0.15);
+    border-bottom: 1px solid rgba(60, 106, 117, 0.15);
 }
 
 #sidebar nav a {
@@ -114,8 +109,19 @@ nav {
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
-    border-top: 1px solid rgba(60, 106, 117, 0.1);
     border-bottom: 1px solid rgba(60, 106, 117, 0.1);
+}
+
+.menu {
+    display: none;
+}
+
+.menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #edf0f1;
+    margin: 5px;
+
 }
 
 @media screen and (max-height: 320px) {
@@ -142,8 +148,8 @@ nav {
 		text-align: center;
         top: 70px;
         width: 100%;
-        border-bottom: 1px solid rgba(0, 136, 169, 0.3);
-        border-top: 1px solid rgba(60, 106, 117, 0.3);
+        border-bottom: 1px solid rgba(0, 136, 169, 1);
+        border-right: none;
     }
 
     #sidebar nav ul {
@@ -167,7 +173,7 @@ nav {
         overflow-x: hidden;
     }
 
-    nav {
+    #navbar nav {
         justify-content: space-between;
     }
 
@@ -175,45 +181,44 @@ nav {
         transform: translateX(50px);
     }
 
-    .nav_links {
+    #sidebar {
+        display: none;
+    }
+
+    .nav-links {
         position: absolute;
         right:0px;
         top: 70px;
         width: 100%;
-        display: flex;
-        align-items: center;
+        height: 300px;
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari and Chrome */
+        -o-animation: fadein 2s;
     }
 
-    .nav_links li {
-        padding: 30px;
-        width: 100%;
+    #navbar nav ul li {
+        height: 100px;
         text-align: center;
         background-color: rgba(30, 31, 36, 0.5);
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 136, 169, 0.3);
     }
 
-    .nav_links li a {
+    #navbar a {
         background-color: rgba(0, 0, 0, 0);
+        width: 110%;
+        line-height: 100px;
     }
 
     .menu {
         transform: translateX(-50px);
         display: block;
         background-color: #1e1f24;
-    }
-
-    .nav_links li {
-        border-bottom: 1px solid rgba(0, 136, 169, 0.1);
-    }
-
-    #sidebar {
-        display: none;
     }
 }
 
