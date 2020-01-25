@@ -5,6 +5,17 @@
     padding: 0px;
     box-sizing: border-box;
     background-color: #24252a;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.toptest {
+    top: 100px;
 }
 
 /* Header */
@@ -14,6 +25,8 @@
 }
 
 #navbar nav {
+    
+    z-index: 100;
     position: fixed;
     margin: 0px;
     display: flex;
@@ -62,6 +75,15 @@
 
 .menu {
     display: none;
+}
+
+section {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    top: 70px;
+    height: 100vh; 
+    border-top: 1px solid rgba(0, 136, 169, 0.3);
+    border-bottom: 1px solid rgba(0, 136, 169, 0.3);
 }
 
 /* Sidebar */
