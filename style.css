@@ -6,27 +6,105 @@
     box-sizing: border-box;
     background-color: #24252a;
     scroll-behavior: smooth;
+    margin-top: 0px;
+    overflow-y: hidden;
+
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-#github
-{ background: rgba(33,31,31,1); }
+#github {
+    background-color: rgba(33,31,31,1);
+}
+
+#github * {
+    background-color: inherit;
+}
+
+#salesforce * {
+    background-color: inherit;
+}
+
+#youtube * {
+    background-color: inherit;
+}
+
+#linkedin * {
+    background-color: inherit;
+}
+
+/* Main */
+
+section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    top: 70px;
+    height: 100vh; 
+    border-top: 1px solid rgba(0, 136, 169, 0.3);
+    border-bottom: 1px solid rgba(0, 136, 169, 0.3);
+}
+
+#text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid rgba(60, 106, 117, 1);
+}
+
+#text ul {
+    width: 100%;
+    list-style: none;
+}
+
+#text li {
+    height: 20vh;
+}
+
+#text h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    color: #edf0f1;
+    line-height: 12vh;
+}
+
+#text h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #edf0f1;
+}
+
+section div {
+    float: left;
+    width: 50%;
+    height: calc(100vh - 70px);
+    background: inherit;
+    top: 70px;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+
+section img {
+    position: relative;
+    top: 25%;
+    height: 50%;
+    width: 50%;
+}
 
 #salesforce
-{ background: rgba(23,152,193,0.05); }
+{ background: #223139; }
 
 #youtube
-{ background: rgba(178,7,29,0.1); }
+{ background: #322129; }
 
 #linkedin
-{ background: rgba(14,118,168,0.1); }
-
-.toptest {
-    top: 100px;
-}
+{ background: #1f3442 }
 
 /* Header */
 
@@ -35,6 +113,7 @@
 }
 
 #navbar nav {
+    margin-top: 150px;
     
     z-index: 100;
     position: fixed;
@@ -72,7 +151,11 @@
 }
 
 #navbar a:hover {
-    color: #cff6ff;
+    color: #8ceaff;
+}
+
+#sidebar a:hover {
+    color: #8ceaff;
 }
 
 .logo h4 {
@@ -87,16 +170,7 @@
     display: none;
 }
 
-/* Main */
 
-section {
-    margin-left: 250px;
-    width: calc(100% - 250px);
-    top: 70px;
-    height: 100vh; 
-    border-top: 1px solid rgba(0, 136, 169, 0.3);
-    border-bottom: 1px solid rgba(0, 136, 169, 0.3);
-}
 
 /* Sidebar */
 
@@ -175,6 +249,15 @@ section {
 }
 
 @media screen and (max-width: 1280px) {
+
+    #text ul {
+        margin-top: 50px;
+    }
+    
+    #github div {
+        height: calc(100vh - 120px);
+        top: 120px;
+    }
 
     section {
         width: 100%;
