@@ -1,0 +1,19 @@
+#logos {
+    background-image: linear-gradient(red, yellow);
+}
+
+#animations {
+    background-image: linear-gradient(yellow, limegreen);
+}
+
+#models {
+    background-image: linear-gradient(limegreen, dodgerblue);
+}
+
+#software {
+    background-image: linear-gradient(dodgerblue, blueviolet);
+}
+
+#misc {
+    background-image: linear-gradient(blueviolet, red);
+}
