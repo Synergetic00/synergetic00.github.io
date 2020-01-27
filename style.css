@@ -3,354 +3,92 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    background-color: #24252a;
+    list-style: none;
+    text-decoration: none;
     scroll-behavior: smooth;
-    margin-top: 0px;
-    overflow-y: hidden;
-
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-#github {
-    background-color: rgba(33,31,31,1);
+#navside {
+    z-index: 5;
+    background: #1e1f24;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
 }
 
-#github * {
-    background-color: inherit;
+#navside ul {
+    width: 100%;
 }
 
-#salesforce * {
-    background-color: inherit;
+#navside li {
+    text-align: right;
+    height: 10vh;
 }
 
-#youtube * {
-    background-color: inherit;
+#navside p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #edf0f1;
+    text-align: right;
+    width: 85%;
+    line-height: 10vh;
+    z-index: 1;
 }
 
-#linkedin * {
-    background-color: inherit;
-}
-
-/* Main */
-
-section {
+#content {
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-left: 250px;
     width: calc(100% - 250px);
-    top: 70px;
-    height: 100vh; 
-    border-top: 1px solid rgba(0, 136, 169, 0.3);
-    border-bottom: 1px solid rgba(0, 136, 169, 0.3);
+    height: 100vh;
+    border: blue 1px solid;
 }
 
-#text {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-right: 1px solid rgba(60, 106, 117, 1);
-}
+@media screen and (max-width: 960px) {
 
-#text ul {
-    width: 100%;
-    list-style: none;
-}
-
-#text li {
-    height: 20vh;
-}
-
-#text h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 40px;
-    color: #edf0f1;
-    line-height: 12vh;
-}
-
-#text h4 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: #edf0f1;
-}
-
-section div {
-    float: left;
-    width: 50%;
-    height: calc(100vh - 70px);
-    background: inherit;
-    top: 70px;
-    position: relative;
-    vertical-align: middle;
-}
-
-
-
-section img {
-    position: relative;
-    top: 25%;
-    height: 50%;
-    width: 50%;
-}
-
-#salesforce
-{ background: #223139; }
-
-#youtube
-{ background: #322129; }
-
-#linkedin
-{ background: #1f3442 }
-
-/* Header */
-
-#navbar {
-    display: inline;
-}
-
-#navbar nav {
-    margin-top: 150px;
-    
-    z-index: 100;
-    position: fixed;
-    margin: 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    background: #1e1f24;
-    border-bottom: 1px solid rgba(0, 136, 169, 1);
-}
-
-#navbar nav ul {
-    list-style: none;
-    display: flex;
-    height: 99%;
-}
-
-#navbar nav ul li {
-    list-style: none;
-    display: flex;
-    height: inherit;
-    background: #1e1f24;
-    padding: 0px 20px;
-}
-
-#navbar a {
-    font-family: "Montserrat", sans-serif;
-    background-color: #1e1f24;
-    font-weight: lighter;
-    color: #edf0f1;
-    text-decoration: none;
-    line-height: 68px;
-}
-
-#navbar a:hover {
-    color: #8ceaff;
-}
-
-#sidebar a:hover {
-    color: #8ceaff;
-}
-
-.logo h4 {
-    font-family: "Montserrat", sans-serif;
-    background-color: #1e1f24;
-    font-weight: bolder;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
-.menu {
-    display: none;
-}
-
-
-
-/* Sidebar */
-
-#sidebar nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #212127;
-    height: calc(100% - 70px);
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: fixed;
-    text-align: right;
-    width: 250px;
-    left: 0;
-    z-index: 10000;
-    top: 70px;
-    border: none;
-    vertical-align: middle;
-    border-right: 1px solid rgba(60, 106, 117, 1);
-}
-
-#sidebar nav ul {
-    width: 100%;
-    left: 0px;
-    background: #212127;
-    list-style: none;
-}
-
-#sidebar nav ul li {
-    width: 85%;
-    background: #212127;
-    height: 100px;
-    border-top: 1px solid rgba(60, 106, 117, 0.15);
-    border-bottom: 1px solid rgba(60, 106, 117, 0.15);
-}
-
-#sidebar nav a {
-    width: 100%;
-    background: #212127;
-    display: block;
-    font-family: "Montserrat", sans-serif;
-    line-height: 100px;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(60, 106, 117, 0.1);
-}
-
-.menu {
-    display: none;
-}
-
-.menu div {
-    width: 25px;
-    height: 3px;
-    background-color: #edf0f1;
-    margin: 5px;
-
-}
-
-@media screen and (max-height: 320px) {
-    #sidebar {
-        display: none;
-    }
-}
-
-@media screen and (max-height: 600px) {
-    #sidebar nav ul li {
-        height: 50px;
-    }
-    
-    #sidebar nav a {
-        line-height: 50px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-
-    #text ul {
-        margin-top: 50px;
-    }
-    
-    #github div {
-        height: calc(100vh - 120px);
-        top: 120px;
-    }
-
-    section {
-        width: 100%;
-        margin-left: 0px;
-        top: 70px;
-        height: 100vh;
-        border-top: 1px solid rgba(0, 136, 169, 0.3);
-        border-bottom: 1px solid rgba(0, 136, 169, 0.3);
-    }
-
-    #sidebar nav {
+    #navside {
         height: 50px;
         overflow: hidden;
-		padding: 0;
 		text-align: center;
-        top: 70px;
         width: 100%;
-        border-bottom: 1px solid rgba(0, 136, 169, 1);
-        border-right: none;
     }
 
-    #sidebar nav ul {
+    #navside ul {
         display: flex;
-        width: 80%;
+        width: 85%;
+        height: inherit;
     }
 
-    #sidebar nav ul li {
+    #navside li {
+        width: 85%;
         display: block;
         height: inherit;
-        padding: 0;
     }
 
-    #sidebar nav a {
-        font-size: 13px;
-    }
-
-    
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    #navbar nav {
-        justify-content: space-between;
-    }
-
-    .logo {
-        transform: translateX(50px);
-    }
-
-    #sidebar {
-        display: none;
-    }
-
-    .nav-links {
-        position: absolute;
-        right:0px;
-        top: 70px;
+    #navside p {
+        font-size: 12px;
         width: 100%;
-        height: 300px;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        animation: fadein 2s;
-        -moz-animation: fadein 2s; /* Firefox */
-        -webkit-animation: fadein 2s; /* Safari and Chrome */
-        -o-animation: fadein 2s;
-    }
-
-    #navbar nav ul li {
-        height: 100px;
         text-align: center;
-        background: #212127;
-        padding: 0;
+        line-height: 50px;
+    }
+
+    #content {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0px;
         width: 100%;
-        border-bottom: 1px solid rgba(0, 136, 169, 0.3);
+        top: 50px;
+        height: calc(100vh - 50px);
+        border: blue 1px solid;
     }
-
-    #navbar a {
-        background-color: rgba(0, 0, 0, 0);
-        width: 110%;
-        line-height: 100px;
-    }
-
-    .menu {
-        transform: translateX(-50px);
-        display: block;
-        background-color: #1e1f24;
-    }
-}
-
-.nav_active {
-    transform: translateX(0%);
 }
