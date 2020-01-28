@@ -1,19 +1,60 @@
-#logos {
-    background-image: linear-gradient(red, yellow);
+#A0 {
+    height: 100vh;
+    background-image: url('../../images/A/A0.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-#animations {
-    background-image: linear-gradient(yellow, limegreen);
+#A1 {
+    height: 100vh;
+    background-image: url('../../images/A/A1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-#models {
-    background-image: linear-gradient(limegreen, dodgerblue);
+#A2 {
+    height: 100vh;
+    background-image: url('../../images/A/A2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#software {
-    background-image: linear-gradient(dodgerblue, blueviolet);
+#A3 {
+    height: 100vh;
+    background-image: url('../../images/A/A3.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-#misc {
-    background-image: linear-gradient(blueviolet, red);
+#A4 {
+    height: 100vh;
+    background-image: url('../../images/A/A4.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 960px) {
+    #A0 {
+        height: calc(100vh - 50px);
+    }
+    
+    #A1 {
+        height: calc(100vh - 49px);
+    }
+    
+    #A2 {
+        height: calc(100vh - 49px);
+    }
+    
+    #A3 {
+        height: calc(100vh - 49px);
+    }
+    
+    #A4 {
+        height: calc(100vh - 50px);
+    }
 }
