@@ -12,11 +12,63 @@
     display: none;
 }
 
+#navbar {
+    z-index: 20;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background: #1e1f24;
+    border-bottom: 1px solid rgba(0, 136, 169, 1);
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    height: 99%;
+}
+
+#navbar li {
+    list-style: none;
+    display: flex;
+    height: inherit;
+    background: #1e1f24;
+    padding: 0px 20px;
+}
+
+#navbar a {
+    font-family: "Montserrat", sans-serif;
+    background-color: #1e1f24;
+    font-weight: lighter;
+    color: #edf0f1;
+    text-decoration: none;
+    line-height: 68px;
+}
+
+#navbar a:hover {
+    color: #8ceaff;
+}
+
+.logo h4 {
+    font-family: "Montserrat", sans-serif;
+    background-color: #1e1f24;
+    font-weight: bolder;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.menu {
+    display: none;
+}
+
 #navside {
     z-index: 5;
     background: #1e1f24;
     width: 250px;
-    height: 100vh;
+    top: 70px;
+    height: calc(100vh - 70px);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -52,9 +104,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
     margin-left: 250px;
     width: calc(100% - 250px);
-    height: 100vh;
+    top: 70px;
+    height: calc(100vh - 70px);
 }
 
 #content p {
@@ -66,6 +120,7 @@
 @media screen and (max-width: 960px) {
 
     #navside {
+        top: 70px;
         height: 50px;
         overflow: hidden;
 		text-align: center;
@@ -95,7 +150,7 @@
         position: relative;
         margin-left: 0px;
         width: 100%;
-        top: 50px;
-        height: calc(100vh - 50px);
+        top: 120px;
+        height: calc(100vh - 120px);
     }
 }
