@@ -10,6 +10,10 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html {
     overflow: hidden;
     height: 100%;
@@ -128,10 +132,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-#pages * {
-    font-size: 100px;
+#pages h1 {
+    font-size: 70px;
+}
+
+#pages h2 {
+    font-weight: 300;
+    font-size: 30px;
 }
 
 #rBtn {
@@ -155,6 +165,23 @@ body {
 #rBtn p {
     font-size: 50px;
     text-align: center;
+}
+
+#pages img {
+    height: 250px;
+}
+
+#learnmore {
+    background-color: rgb(53, 79, 94);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 32px;
+    border-radius: 32px;
 }
 
 /* ignore this hahaha it's so it goes on load without problems dont judge*/
