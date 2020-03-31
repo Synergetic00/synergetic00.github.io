@@ -95,7 +95,86 @@ body {
 }
 
 #content {
-    width: calc(100% - 275px);
+    width: calc(100% - 325px);
     height: 100vh;
     margin-left: 325px;
+    display: flex;
 }
+
+#lBtn {
+    height: calc(100vh - 2px);
+    width: 5%;
+    background-color: #EFEFEF05;
+    border: 1px #EFEFEF20 solid;
+}
+
+#lBtn a {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#lBtn a p {
+    font-size: 50px;
+    text-align: center;
+}
+
+#pages {
+    height: inherit;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pages * {
+    font-size: 100px;
+}
+
+#rBtn {
+    height: calc(100vh - 2px);
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEFEF05;
+    border: 1px #EFEFEF20 solid;
+}
+
+#rBtn a {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rBtn p {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* ignore this hahaha it's so it goes on load without problems dont judge*/
+
+#graphicsP1 { display: block; }
+#graphicsP2 { display: none; }
+#graphicsP3 { display: none; }
+
+#animationsP1 { display: block; }
+#animationsP2 { display: none; }
+#animationsP3 { display: none; }
+
+#modelsP1 { display: block; }
+#modelsP2 { display: none; }
+#modelsP3 { display: none; }
+
+#gamesP1 { display: block; }
+#gamesP2 { display: none; }
+#gamesP3 { display: none; }
+
+#miscP1 { display: block; }
+#miscP2 { display: none; }
+#miscP3 { display: none; }
