@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --bckgColour: #121212;
+    --navbColour: #1b1b1b;
+    --textColour: #efefef;
+    --hvrhColour: #5c19194d;
+    --logoColour: #d74e42;
+    --navbarH: 56px;
+    --navbarW: calc(var(--navbarH) * 3);
+    --contentH: calc(100vh - var(--navbarH) - 0.5px);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    color: none;
+    background: none;
+}
+
+::-moz-selection {
+    color: none;
+    background: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    color: var(--textColour);
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--bckgColour);
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+a, a:visited {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 100;
+    width: var(--navbarW);
+    height: 100vh;
+    background-color: var(--navbColour);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-right: 0.5px var(--logoColour) solid;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+}
+
+.navbar li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar a:hover {
+    background-color: var(--hvrhColour);
+    width: calc(100% - 1px);
+    border-top: 0.5px var(--logoColour) solid;
+    border-bottom: 0.5px var(--logoColour) solid;
+    height: inherit;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: var(--navbarH);
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.navbar p {
+    color: var(--logoColour);
+}
+
+.navbar img {
+    width: calc(var(--navbarW) * 0.5);
+}
+
+.content {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border-bottom: 0.5px var(--logoColour) solid;
+}
+
+.menu {
+    display: none;
+}
+
+.menu div {
+    width: 30px;
+    height: 4px;
+    background-color: var(--logoColour);
+    margin: 7px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+    .navbar {
+        width: 100%;
+        height: var(--navbarH);
+        border-bottom: 0.5px var(--logoColour) solid;
+        flex-direction: row;
+    }
+    
+    .navbar ul {
+        width: 85%;
+        height: var(--navbarH);
+        flex-direction: row;
+    }
+    
+    .navbar li {
+        width: 100%;
+        height: var(--navbarH);
+        flex-direction: row;
+    }
+    
+    .navbar a:hover {
+        width: calc(100% - 1px);
+        border-left: 0.5px var(--logoColour) solid;
+        border-right: 0.5px var(--logoColour) solid;
+        height: var(--navbarH);
+    }
+    
+    .navbar a {
+        width: 100%;
+        height: var(--navbarH);
+    }
+    
+    .navbar img {
+        width: calc(var(--navbarH) * 0.75);
+    }
+    
+    .content {
+        width: 100%;
+        height: var(--contentH);
+        top: var(--navbarH);
+        position: relative;
+        border-bottom: 0.5px var(--logoColour) solid;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar img {
+        transform: translateX(50px);
+    }
+
+    .menu {
+        transform: translateX(-50px);
+        display: block;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        top: calc(var(--navbarH) - 1.5px);
+        height: 60vh;
+        width: 100%;
+        position: fixed;
+        border-left: 0.5px var(--logoColour) solid;
+        border-right: 0.5px var(--logoColour) solid;
+    }
+
+    .navbar li {
+        height: 100%;
+    }
+
+    .navbar a {
+        height: 100%;
+        border-bottom: 0.5px var(--logoColour) solid;
+    }
+
+    .navbar a:hover {
+        height: 100%;
+        border: none;
+        border-bottom: 0.5px var(--logoColour) solid;
+    }
+}
