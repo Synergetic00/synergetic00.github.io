@@ -4,7 +4,7 @@
     --backFill: #121212;
     --navbFill: #202124;
     --textFill: #efefef;
-    --highFill: #38c2e8;
+    --highFill: 56, 194, 232;
 
     --navbH: 56px;
 }
@@ -39,15 +39,15 @@ a, a:visited {
 }
 
 .nav {
-    background: linear-gradient(0deg, #113944 0%, var(--navbFill) 15%, var(--navbFill) 100%);
+    background: linear-gradient(0deg, rgba(var(--highFill),0.2) 0%, var(--navbFill) 15%, var(--navbFill) 100%);
     width: 100%;
     height: var(--navbH);
-    border-bottom: var(--highFill) 1px solid;
+    border-bottom: rgba(var(--highFill),1) 1px solid;
 }
 
 .logo {
     width: 15%;
-    color: var(--highFill);
+    color: rgba(var(--highFill),1);
     font-size: 25px;
     font-weight: 200;
 }
