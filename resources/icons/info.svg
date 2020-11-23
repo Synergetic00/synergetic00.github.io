@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2000 2000" style="enable-background:new 0 0 2000 2000;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:none;stroke:#FFFFFF;stroke-width:100;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{display:inline;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:100;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:100;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;}
+	.st6{display:inline;fill:#FFFFFF;}
+	.st7{display:inline;fill:none;stroke:#FFFFFF;stroke-width:100;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1">
+</g>
+<g id="Layer_3" class="st0">
+	<line class="st1" x1="1194.1" y1="275.6" x2="805.9" y2="1724.4"/>
+	<g class="st2">
+		<path class="st3" d="M114.7,961.8c-19.5,19.5-19.5,51.2,0,70.7"/>
+		<line class="st4" x1="109.7" y1="967.5" x2="498.6" y2="578.6"/>
+		<line class="st4" x1="113.9" y1="1032.5" x2="502.9" y2="1421.4"/>
+	</g>
+	<g class="st2">
+		<path class="st3" d="M1885.3,1038.2c19.5-19.5,19.5-51.2,0-70.7"/>
+		<line class="st4" x1="1890.3" y1="1032.5" x2="1501.4" y2="1421.4"/>
+		<line class="st4" x1="1886.1" y1="967.5" x2="1497.1" y2="578.6"/>
+	</g>
+</g>
+<g id="Layer_2">
+	<g>
+		<path class="st5" d="M1000,225c104.7,0,206.2,20.5,301.6,60.9c45.9,19.4,90.2,43.4,131.6,71.4c41.1,27.7,79.7,59.6,114.8,94.7
+			c35.1,35.1,67,73.7,94.7,114.8c28,41.4,52,85.7,71.4,131.6c40.4,95.5,60.9,197,60.9,301.6s-20.5,206.2-60.9,301.6
+			c-19.4,45.9-43.4,90.2-71.4,131.6c-27.7,41.1-59.6,79.7-94.7,114.8c-35.1,35.1-73.7,67-114.8,94.7c-41.4,28-85.7,52-131.6,71.4
+			c-95.5,40.4-197,60.9-301.6,60.9s-206.2-20.5-301.6-60.9c-45.9-19.4-90.2-43.4-131.6-71.4c-41.1-27.7-79.7-59.6-114.8-94.7
+			c-35.1-35.1-67-73.7-94.7-114.8c-28-41.4-52-85.7-71.4-131.6c-40.4-95.5-60.9-197-60.9-301.6s20.5-206.2,60.9-301.6
+			c19.4-45.9,43.4-90.2,71.4-131.6C385,525.7,416.9,487.1,452,452s73.7-67,114.8-94.7c41.4-28,85.7-52,131.6-71.4
+			C793.8,245.5,895.3,225,1000,225 M1000,125c-483.2,0-875,391.8-875,875s391.8,875,875,875s875-391.8,875-875S1483.2,125,1000,125
+			L1000,125z"/>
+	</g>
+	<g class="st0">
+		<polygon class="st6" points="1075,475 925,475 925,625 1075,625 1075,475 		"/>
+	</g>
+	<g class="st0">
+		<polygon class="st6" points="1075,775 925,775 775,775 775,925 925,925 925,1375 775,1375 775,1525 925,1525 1075,1525 1225,1525 
+			1225,1375 1075,1375 1075,925 1075,775 		"/>
+	</g>
+	<g>
+		<g>
+			<polygon class="st5" points="1050,700 950,700 850,700 850,800 950,800 950,1400 850,1400 850,1500 950,1500 1050,1500 
+				1150,1500 1150,1400 1050,1400 1050,800 1050,700 			"/>
+		</g>
+		<g>
+			<polygon class="st5" points="1050,500 950,500 950,600 1050,600 1050,500 			"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_4" class="st0">
+	<rect x="399.5" y="175" class="st7" width="1475" height="412.5"/>
+	<rect x="400" y="793.8" class="st7" width="502" height="412.5"/>
+	<rect x="400" y="1412.5" class="st7" width="970" height="412.5"/>
+	<line class="st7" x1="175" y1="175" x2="175" y2="1825"/>
+</g>
+</svg>

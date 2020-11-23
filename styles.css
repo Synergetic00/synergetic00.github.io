@@ -46,19 +46,51 @@ a, a:visited {
 }
 
 .logo {
-    width: 15%;
+    width: calc(var(--navbH) * 3);
+    height: inherit;
+    margin-left: var(--navbH);
     color: rgba(var(--highFill),1);
-    font-size: 25px;
-    font-weight: 200;
+    font-size: 30px;
+    font-weight: 300;
 }
 
 .links {
-    width: 75%;
+    width: 60%;
+    height: inherit;
+    margin-right: var(--navbH);
 }
 
 .links a {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: calc(var(--navbH) * 1.5);
+    height: inherit;
+}
+
+.links a:hover {
+    background-color: rgba(var(--highFill),0.05);
+}
+
+.links a:hover img {
+    height: 20px;
+}
+
+.links a:hover p {
+    height: 20px;
+    display: flex;
+}
+
+.links p {
+    font-size: 15px;
     font-weight: 500;
+    display: none;
+    color: rgba(var(--highFill),1);
+}
+
+.links img {
+    height: 30px;
 }
 
 /* General Properties */
