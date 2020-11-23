@@ -46,16 +46,23 @@ a, a:visited {
 }
 
 .logo {
-    width: calc(var(--navbH) * 3);
+    width: calc(var(--navbH) * 2.5);
     height: inherit;
     margin-left: var(--navbH);
+}
+
+.logo p {
     color: rgba(var(--highFill),1);
     font-size: 30px;
     font-weight: 300;
 }
 
+.logo img {
+    height: 30px;
+}
+
 .links {
-    width: 60%;
+    width: calc(var(--navbH) * 10.5);
     height: inherit;
     margin-right: var(--navbH);
 }
