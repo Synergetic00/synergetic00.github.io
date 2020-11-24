@@ -39,65 +39,125 @@ a, a:visited {
 }
 
 .nav {
-    background: linear-gradient(0deg, rgba(var(--highFill),0.2) 0%, var(--navbFill) 15%, var(--navbFill) 100%);
-    width: 100%;
-    height: var(--navbH);
-    border-bottom: rgba(var(--highFill),1) 1px solid;
+    width: calc(var(--navbH) * 3);
+    height: 100vh;
+    background: linear-gradient(-90deg, rgba(var(--highFill),0.2) 0%, var(--navbFill) 5%, var(--navbFill) 100%);
+    border-right: rgba(var(--highFill),1) 1px solid;
+    flex-direction: column;
 }
-
-.logo {
-    width: calc(var(--navbH) * 2.5);
-    height: inherit;
-    margin-left: var(--navbH);
-}
-
+    
 .logo p {
     color: rgba(var(--highFill),1);
     font-size: 30px;
     font-weight: 300;
 }
 
+.logo {
+    width: calc(var(--navbH) * 3);
+    height: var(--navbH);
+    margin-top: var(--navbH);
+}
+    
 .logo img {
     height: 30px;
 }
 
 .links {
-    width: calc(var(--navbH) * 10.5);
-    height: inherit;
-    margin-right: var(--navbH);
+    margin-bottom: var(--navbH);
+    flex-direction: column;
+    width: calc(var(--navbH) * 3);
+    height: calc(var(--navbH) * 10.5);
 }
 
 .links a {
+    width: calc(var(--navbH) * 3);
+    height: calc(var(--navbH) * 1.5);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    width: calc(var(--navbH) * 1.5);
-    height: inherit;
+    justify-content: space-between;
 }
-
+    
 .links a:hover {
     background-color: rgba(var(--highFill),0.05);
 }
-
-.links a:hover img {
-    height: 20px;
-}
-
+    
 .links a:hover p {
-    height: 20px;
-    display: flex;
-}
-
-.links p {
-    font-size: 15px;
-    font-weight: 500;
-    display: none;
     color: rgba(var(--highFill),1);
 }
 
 .links img {
-    height: 30px;
+    width: 30px;
+    margin-left: calc(var(--navbH) / 2);
+}
+    
+.links p {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--textFill);
+    margin-right: calc(var(--navbH) / 2);
+}
+
+
+@media screen and (max-width: 1280px) {
+    .nav {
+        width: 100%;
+        height: var(--navbH);
+        background: linear-gradient(0deg, rgba(var(--highFill),0.2) 0%, var(--navbFill) 15%, var(--navbFill) 100%);
+        border-bottom: rgba(var(--highFill),1) 1px solid;
+        border-right: none;
+        flex-direction: row;
+    }
+    
+    .logo {
+        width: calc(var(--navbH) * 2.5);
+        height: inherit;
+        margin-left: var(--navbH);
+        margin-top: 0px;
+    }
+    
+    .logo img {
+        height: 30px;
+    }
+    
+    .links {
+        width: calc(var(--navbH) * 10.5);
+        height: inherit;
+        margin-right: var(--navbH);
+        margin-bottom: 0px;
+        flex-direction: row;
+    }
+    
+    .links a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: calc(var(--navbH) * 1.5);
+        height: inherit;
+    }
+    
+    .links a:hover img {
+        height: 20px;
+    }
+    
+    .links a:hover p {
+        height: 20px;
+        display: flex;
+    }
+    
+    .links p {
+        font-size: 15px;
+        font-weight: 500;
+        display: none;
+        color: rgba(var(--highFill),1);
+        margin-right: 0px;
+    }
+    
+    .links img {
+        height: 30px;
+        margin-left: 0px;
+    }
 }
 
 /* General Properties */
