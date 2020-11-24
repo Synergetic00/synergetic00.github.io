@@ -9,6 +9,21 @@
     --navbH: 56px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    color: none;
+    background: none;
+}
+
+::-moz-selection {
+    color: none;
+    background: none;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -44,6 +59,8 @@ a, a:visited {
     background: linear-gradient(-90deg, rgba(var(--highFill),0.2) 0%, var(--navbFill) 5%, var(--navbFill) 100%);
     border-right: rgba(var(--highFill),1) 1px solid;
     flex-direction: column;
+    position: fixed;
+    z-index: 1;
 }
     
 .logo p {
@@ -54,16 +71,17 @@ a, a:visited {
 
 .logo {
     width: calc(var(--navbH) * 3);
-    height: var(--navbH);
-    margin-top: var(--navbH);
+    height: calc(var(--navbH) * 2);
+    margin-top: calc(var(--navbH) * 2);
+    flex-direction: column;
 }
     
 .logo img {
-    height: 30px;
+    height: 60px;
 }
 
 .links {
-    margin-bottom: var(--navbH);
+    margin-bottom: calc(var(--navbH) * 2);
     flex-direction: column;
     width: calc(var(--navbH) * 3);
     height: calc(var(--navbH) * 10.5);
@@ -98,6 +116,15 @@ a, a:visited {
     margin-right: calc(var(--navbH) / 2);
 }
 
+.content {
+    margin-top: 0;
+    margin-left: calc(var(--navbH) * 3);
+    width: calc(100% - (var(--navbH) * 3));
+    height: calc(100vh - 1px);
+    position: relative;
+    border-bottom: rgba(var(--highFill),1) 1px solid;
+}
+
 
 @media screen and (max-width: 1280px) {
     .nav {
@@ -114,6 +141,7 @@ a, a:visited {
         height: inherit;
         margin-left: var(--navbH);
         margin-top: 0px;
+        flex-direction: row;
     }
     
     .logo img {
@@ -157,6 +185,15 @@ a, a:visited {
     .links img {
         height: 30px;
         margin-left: 0px;
+    }
+
+    .content {
+        top: var(--navbH);
+        margin-left: 0px;
+        width: 100%;
+        height: calc(100vh - 1px - var(--navbH));
+        position: relative;
+        border-bottom: rgba(var(--highFill),1) 1px solid;
     }
 }
 
