@@ -4,6 +4,7 @@
     --backFill: #121212;
     --navbFill: #202124;
     --textFill: #efefef;
+    --gradFill: #113944;
     --highFill: 56, 194, 232;
 
     --navbH: 56px;
@@ -56,7 +57,7 @@ a, a:visited {
 .nav {
     width: calc(var(--navbH) * 3);
     height: 100vh;
-    background: linear-gradient(-90deg, rgba(var(--highFill),0.2) 0%, var(--navbFill) 5%, var(--navbFill) 100%);
+    background: linear-gradient(-90deg, var(--gradFill) 0%, var(--navbFill) 5%, var(--navbFill) 100%);
     border-right: rgba(var(--highFill),1) 1px solid;
     flex-direction: column;
     position: fixed;
@@ -130,7 +131,7 @@ a, a:visited {
     .nav {
         width: 100%;
         height: var(--navbH);
-        background: linear-gradient(0deg, rgba(var(--highFill),0.2) 0%, var(--navbFill) 15%, var(--navbFill) 100%);
+        background: linear-gradient(0deg, var(--gradFill) 0%, var(--navbFill) 15%, var(--navbFill) 100%);
         border-bottom: rgba(var(--highFill),1) 1px solid;
         border-right: none;
         flex-direction: row;
