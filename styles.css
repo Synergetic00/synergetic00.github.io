@@ -73,24 +73,24 @@ a, a:visited {
 .logo {
     width: calc(var(--navbH) * 3);
     height: calc(var(--navbH) * 2);
-    margin-top: calc(var(--navbH) * 2);
+    margin-top: 5vh;
     flex-direction: column;
 }
     
 .logo img {
-    height: 60px;
+    height: clamp(20px, 12vh , 60px);
 }
 
 .links {
-    margin-bottom: calc(var(--navbH) * 2);
+    margin-bottom: 5vh;
     flex-direction: column;
     width: calc(var(--navbH) * 3);
-    height: calc(var(--navbH) * 10.5);
+    height: 63vh;
 }
 
 .links a {
     width: calc(var(--navbH) * 3);
-    height: calc(var(--navbH) * 1.5);
+    height: 9vh;
     display: flex;
     flex-direction: row;
     align-items: center;
