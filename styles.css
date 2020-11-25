@@ -126,6 +126,72 @@ a, a:visited {
     border-bottom: rgba(var(--highFill),1) 1px solid;
 }
 
+.cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 40%;
+    height: 40vh;
+    background: linear-gradient(0deg, var(--gradFill) 0%, var(--navbFill) 2%, var(--navbFill) 98%, var(--gradFill) 100%);
+    border-top: rgba(var(--highFill),1) 1px solid;
+    border-bottom: rgba(var(--highFill),1) 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cardItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardItem h1 {
+    font-size: 30px;
+    font-weight: 100;
+    color: var(--textFill);
+}
+
+.cardItem h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(var(--highFill),1);
+}
+
+.skillText {
+    height: var(--navbH);
+    margin-left: var(--navbH);
+}
+
+.skillScore {
+    width: var(--navbH);
+    height: var(--navbH);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: var(--navbH);
+    border-radius: var(--navbH);
+}
+
+.skillHgh {
+    border: #00ff00 2px solid;
+}
+
+.skillMid {
+    border: #ffff00 2px solid;
+}
+
+.skillLow {
+    border: #ff0000 2px solid;
+}
+
 
 @media screen and (max-width: 1280px) {
     .nav {
