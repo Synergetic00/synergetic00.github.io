@@ -123,7 +123,7 @@ a, a:visited {
     width: calc(100% - (var(--navbH) * 3));
     height: calc(100vh - 1px);
     position: relative;
-    border-bottom: rgba(var(--highFill),1) 1px solid;
+    border-bottom: var(--navbFill) 1px solid;
     display: flex;
     flex-direction: row;
 }
@@ -142,6 +142,7 @@ a, a:visited {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(0deg, #00000000 0%, #12121240 50%,#00000000 100%);
 }
 
 .button a {
@@ -162,14 +163,43 @@ a, a:visited {
     justify-content: center;
 }
 
-.btnL {
-    border-right: rgba(var(--highFill),1) 1px solid;
-    background: linear-gradient(-90deg, var(--gradFill) 0%, var(--backFill) 10%, var(--backFill) 100%);
+.home {
+    background: linear-gradient(0deg,rgba(1,14,15,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.btnR {
-    border-left: rgba(var(--highFill),1) 1px solid;
-    background: linear-gradient(90deg, var(--gradFill) 0%, var(--backFill) 10%, var(--backFill) 100%);
+.home h1 {
+    font-size: 100px;
+    font-weight: 100;
+    font-style: italic;
+    font-variant: small-caps;
+    color: rgba(var(--highFill),1);
+}
+
+.about {
+    background: linear-gradient(0deg, rgba(3,24,36,1) 0%, rgba(1,14,15,1) 100%);
+}
+
+.skills {
+    background: linear-gradient(0deg, rgba(6,43,52,1) 0%, rgba(3,24,36,1) 100%);
+}
+
+.graphics {
+    background: linear-gradient(0deg, rgba(29,97,135,1) 0%, rgba(6,43,52,1) 100%);
+}
+
+.coding {
+    background: linear-gradient(0deg, rgba(47,148,175,1) 0%, rgba(29,97,135,1) 100%);
+}
+
+.games {
+    background: linear-gradient(0deg,rgba(59,167,196,1) 0%, rgba(47,148,175,1) 100%);
+}
+
+.videos {
+    background: linear-gradient(0deg, rgb(83, 192, 223) 0%, rgba(59,167,196,1) 100%);
 }
 
 @media screen and (max-width: 1280px) {
@@ -239,7 +269,6 @@ a, a:visited {
         width: 100%;
         height: calc(100vh - 1px - var(--navbH));
         position: relative;
-        border-bottom: rgba(var(--highFill),1) 1px solid;
     }
 }
 
@@ -271,10 +300,3 @@ a, a:visited {
 .mdl {
     justify-content: center;
 }
-
-/* ignore this hahaha it's so it goes on load without problems dont judge*/
-
-#skillsP1 { display: block; }
-#skillsP2 { display: none; }
-#skillsP3 { display: none; }
-#skillsP4 { display: none; }
