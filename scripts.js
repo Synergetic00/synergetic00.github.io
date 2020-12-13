@@ -31,7 +31,7 @@ function changeShownPages() {
             console.log(elements[i]+'P'+j);
             document.getElementById(elements[i]+'P'+j).style.display='none';
         }
-        document.getElementById(elements[i]+'P'+pageNums[i]).style.display='block';
+        document.getElementById(elements[i]+'P'+pageNums[i]).style.display='flex';
     }
 
     return false;
