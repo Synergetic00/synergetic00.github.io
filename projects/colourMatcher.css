@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --backFill: #121212;
+    --navbFill: #202124;
+    --textFill: #efefef;
+    --gradFill: #113944;
+    --highFill: 56, 194, 232;
+    --aspectRatio: 9/16;
+    --navbH: 56px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    color: none;
+    background: none;
+}
+
+::-moz-selection {
+    color: none;
+    background: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    color: var(--textFill);
+    scroll-behavior: smooth;
+    border: none;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--backFill);
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+a, a:visited {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+}
+
+input {
+    margin-top: 30vh;
+    border: none;
+    width: 90%;
+    height: 20vh;
+    background-color: var(--backFill);
+}
+
+p {
+    margin-top: 10vh;
+    font-weight: 900;
+    font-size: 40px;
+}
+/* General Properties */
+
+.ctr {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.lft {
+    display: flex;
+    align-items: flex-start;
+}
+
+.rht {
+    display: flex;
+    align-items: flex-end;
+}
+
+.sbt {
+    justify-content: space-between;
+}
+
+.spe {
+    justify-content: space-evenly;
+}
+
+.mdl {
+    justify-content: center;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
