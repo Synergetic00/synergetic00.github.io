@@ -1,9 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap');
 
+.window {
+    height: calc(100vh - 1px - var(--navbH));
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Boiler Plate CSS */
+
 :root {
     --backFill: #121212;
     --navbFill: #202124;
-    --textFill: #efefef;
+    --textFill: #eeeeee;
     --gradFill: #113944;
     --highFill: 56, 194, 232;
     --aspectRatio: 9/16;
@@ -54,6 +93,35 @@ a, a:visited {
     background: linear-gradient(0deg, var(--gradFill) 0%, var(--navbFill) 15%, var(--navbFill) 100%);
     border-bottom: rgba(var(--highFill),1) 1px solid;
     border-right: none;
+    display: flex;
+    align-items: center;
+}
+    
+.title {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title p {
+    color: rgba(var(--highFill),1);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.title img {
+    width: 30px;
+    height: 30px;
+}
+
+.links {
+    width: calc(var(--navbH) * 10.5);
+    height: inherit;
+    margin-right: var(--navbH);
+    margin-bottom: 0px;
     flex-direction: row;
 }
 
@@ -61,87 +129,54 @@ a, a:visited {
     height: calc(100vh - 1px - var(--navbH));
     justify-content: space-evenly;
     align-items: center;
-    display: flex;
-}
-
-.box {
-    width: 925px;
-    height: 475px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #0088ee10;
-}
-
-.values {
-    width: 875px;
-    height: 300px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #0088ee10;
-}
-
-.vector {
-    display: flex;
-    width: 150px;
-    flex-direction: column;
-    height: 250px;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #0088ee10;
-}
-
-.modifiers {
-    display: flex;
-    width: 475px;
-    flex-direction: column;
-    height: 250px;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #0088ee10;
 }
 
 .row {
-    display: flex;
-    width: 475px;
+    width: 800px;
+    justify-content: space-between;
     flex-direction: row;
-    height: 250px;
-    justify-content: space-evenly;
-    align-items: center;
+    height: 10vh;
 }
 
-.label {
-    width: 50px;
-    height: 50px;
-    display: flex;
+.row h1 {
+    width: 175px;
+    font-size: 40px;
+    font-weight: 300;
+    user-select: none;
+    z-index: -1;
+    color: rgba(var(--highFill), 1);
+}
+
+.row a {
+    width: 100%;
+    height: inherit;
+    background-color: #eeeeee03;
+    border: 1px solid #eeeeee10;
+    border-radius: 5px;
+    
+    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    font-size: 30px;
-    font-weight: 100;
-    background-color: #0088ee10;
+}
+
+.row p {
+    font-size: 50px;
 }
 
 input {
-    width: 100px;
-    background-color: #0088ee10;
+    width: 150px;
+    background-color: #eeeeee03;
     height: 50px;
-    color: #efefef;
+    color: #eeeeee;
     padding: 12px 20px;
-    font-weight: 200;
+    font-weight: 400;
+    font-size: 20px;
     margin: 8px 0;
+    text-align: center;
+    border: 1px solid #eeeeee10;
+    border-radius: 5px;
     box-sizing: border-box;
-}
-
-.button {
-    width: 875px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #0088ee10;
 }
 
 .button a {
@@ -153,4 +188,9 @@ input {
     justify-content: space-evenly;
     font-size: 50px;
     font-weight: 100;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
 }

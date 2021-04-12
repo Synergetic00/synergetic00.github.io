@@ -3,8 +3,16 @@ let tx, ty, tz;
 let rx, ry, rz;
 let sx, sy, sz;
 let fx, fy, fz;
+let first, second, third;
 
 function submit() {
+    console.log('pressed');
+
+    // Ordering
+    first = document.getElementById('first').value;
+    second = document.getElementById('second').value;
+    third = document.getElementById('third').value;
+
     // Original
     ox = document.getElementById('ox').value*1;
     oy = document.getElementById('oy').value*1;
@@ -34,9 +42,24 @@ function submit() {
 };
 
 function calculate() {
-    scale();
-    rotate();
-    translate();
+    switch (first) {
+        case "T": translate(); break;
+        case "S": rotate(); break;
+        case "R": scale(); break;
+        default: break;
+    }
+    switch (second) {
+        case "T": translate(); break;
+        case "S": rotate(); break;
+        case "R": scale(); break;
+        default: break;
+    }
+    switch (third) {
+        case "T": translate(); break;
+        case "S": rotate(); break;
+        case "R": scale(); break;
+        default: break;
+    }
     output();
 };
 
@@ -47,8 +70,8 @@ function translate() {
 };
 
 function rotate() {
-    let rrx = rx * (Math.PI / 180);
-    let rry = ry * (Math.PI / 180);
+    let rry = rx * (Math.PI / 180);
+    let rrx = ry * (Math.PI / 180);
     let rrz = rz * (Math.PI / 180);
 
     let cosa = Math.cos(rrz);
@@ -80,19 +103,6 @@ function rotate() {
     oy = Ayx*px + Ayy*py + Ayz*pz;
     oz = Azx*px + Azy*py + Azz*pz;
 }
-
-/*
-function rotate() {
-    rrx = rx * (Math.PI / 180);
-    rry = ry * (Math.PI / 180);
-    rrz = rz * (Math.PI / 180);
-    s = Math.sin(rrz);
-    c = Math.cos(rrz);
-
-    ox *= c;
-    oy *= s;
-};
-*/
 
 function scale() {
     ox *= sx;
