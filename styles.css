@@ -24,7 +24,6 @@
     background: none;
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -179,7 +178,7 @@ a, a:visited {
 }
 
 .pages div {
-    position: s;
+    /*position: s;*/
     display: flex;
     position: relative;
     align-items: center;
@@ -222,6 +221,17 @@ a, a:visited {
     font-size: 20px;
     font-weight: 600;
     text-align: justify;
+}
+
+.square {
+    width: min(80vh, 80%);
+    height: min(80vh, 80%);
+    background-color: red;
+}
+
+.centered {
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .about {

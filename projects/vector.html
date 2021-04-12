@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Calculator</title>
+    <link rel="stylesheet" href="vector/styles.css">
+    <link rel="icon" href="../resources/blueLogo.png">
+</head>
+<body>
+    <div class="nav">
+
+    </div>
+    <div class="window">
+        <div class="box">
+            <div class = "values">
+                
+            <div class="vector">
+                <input type='number' id='ox' step='0.01' value='0' placeholder='0'/>
+                <input type='number' id='oy' step='0.01' value='0' placeholder='0'/>
+                <input type='number' id='oz' step='0.01' value='0' placeholder='0'/>
+            </div>
+            <div class="modifiers">
+                <div class="row">
+                    <div class="label">T</div>
+                    <input type='number' id='tx' step='0.01' value='0' placeholder='0'/>
+                    <input type='number' id='ty' step='0.01' value='0' placeholder='0'/>
+                    <input type='number' id='tz' step='0.01' value='0' placeholder='0'/>
+                </div>
+                <div class="row">
+                    <div class="label">R</div>
+                    <input type='number' id='rx' step='0.01' value='0' placeholder='0'/>
+                    <input type='number' id='ry' step='0.01' value='0' placeholder='0'/>
+                    <input type='number' id='rz' step='0.01' value='0' placeholder='0'/>
+                </div>
+                <div class="row">
+                    <div class="label">S</div>
+                    <input type='number' id='sx' step='0.01' value='1' placeholder='1'/>
+                    <input type='number' id='sy' step='0.01' value='1' placeholder='1'/>
+                    <input type='number' id='sz' step='0.01' value='1' placeholder='1'/>
+                </div>
+            </div>
+            <div class="vector">
+                <input type='number' id='fx' step='0.01' value='0.0000' placeholder='0.0000'/>
+                <input type='number' id='fy' step='0.01' value='0.0000' placeholder='0.0000'/>
+                <input type='number' id='fz' step='0.01' value='0.0000' placeholder='0.0000'/>
+            </div>
+            </div>
+            <div class="button">
+                <a onclick="submit()">EVALUATE</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="vector/scripts.js"></script>
+</html>
