@@ -42,6 +42,7 @@ function submit() {
 };
 
 function calculate() {
+    console.log(first, second, third);
     switch (first) {
         case "T": translate(); break;
         case "S": rotate(); break;
