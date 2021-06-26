@@ -122,7 +122,7 @@ a, a:visited {
     width: calc(100% - (var(--navbH) * 3));
     height: calc(100vh - 1px);
     position: relative;
-    border-bottom: var(--navbFill) 1px solid;
+    border-bottom: var(--navbFill) 1px dotted;
     display: flex;
     flex-direction: row;
 }
@@ -247,15 +247,24 @@ a, a:visited {
 }
 
 .coding {
-    background: linear-gradient(0deg, rgba(47,148,175,1) 0%, rgba(29,97,135,1) 100%);
+    background-image: url('resources/Background-02.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: linear-gradient(0deg, rgba(47,148,175,1) 0%, rgba(29,97,135,1) 100%);*/
 }
 
 .games {
-    background: linear-gradient(0deg,rgba(59,167,196,1) 0%, rgba(47,148,175,1) 100%);
+    background-image: url('resources/Background-01.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: linear-gradient(0deg,rgba(59,167,196,1) 0%, rgba(47,148,175,1) 100%);*/
 }
 
 .videos {
-    background: linear-gradient(0deg, rgb(83, 192, 223) 0%, rgba(59,167,196,1) 100%);
+    background-image: url('resources/Background-00.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: linear-gradient(0deg, rgb(83, 192, 223) 0%, rgba(59,167,196,1) 100%);*/
 }
 
 @media screen and (max-width: 1280px) {

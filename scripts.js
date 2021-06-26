@@ -3,7 +3,7 @@ var pageNum = 1;
 var elements = ["skills","graphics","coding","games","videos"];
 
 var pageNums = [1,1,1,1,1];
-var maxPages = [4,2,2,2,2];
+var maxPages = [4,2,2,3,2];
 
 function changePage(dir, id) {
     var max = maxPages[id];
